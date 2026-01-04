@@ -129,4 +129,5 @@ button:hover { background-color: #2980b9; }
 .control-btn:active { background-color: rgba(255, 255, 255, 0.4); transform: scale(0.95); }
 .spacer { width: 50px; height: 50px; margin: 5px; }
 .fire-btn { width: 70px; height: 70px; background-color: rgba(255, 0, 0, 0.2); border-color: rgba(255, 0, 0, 0.6); font-size: 30px; }
+
 .fire-btn:active { background-color: rgba(255, 0, 0, 0.5); }
