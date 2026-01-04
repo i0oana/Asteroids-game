@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Joc Inimioara - High Scores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <div id="gameOverScreen" class="hidden">
+        <h1>GAME OVER</h1>
+        <p class="final-score-text">Scor Final: <span id="finalScoreDisplay">0</span></p>
+
+        <div id="highScoreInputZone" class="hidden">
+            <p style="color: #F1C40F;">RECORD NOU! 🎉</p>
+            <input type="text" id="playerNameInput" placeholder="Numele tău" maxlength="10">
+            <button id="saveScoreBtn">Salvează</button>
+        </div>
+
+        <div class="leaderboard">
+            <h3>🏆 Top 5 Jucători 🏆</h3>
+            <ul id="highScoreList">
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+            </ul>
+        </div>
+
+        <button id="restartBtn">Joacă din nou</button>
+    </div>
+
+    <div id="touch-controls">
+        <div class="dpad">
+            <div class="dpad-row"><button id="btnUp" class="control-btn">▲</button></div>
+            <div class="dpad-row">
+                <button id="btnLeft" class="control-btn">◀</button>
+                <div class="spacer"></div>
+                <button id="btnRight" class="control-btn">▶</button>
+            </div>
+            <div class="dpad-row"><button id="btnDown" class="control-btn">▼</button></div>
+        </div>
+        <div class="actions">
+            <div class="action-row">
+                <button id="btnRotLeft" class="control-btn action-btn">↺</button>
+                <button id="btnShoot" class="control-btn fire-btn">🔥</button>
+                <button id="btnRotRight" class="control-btn action-btn">↻</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
